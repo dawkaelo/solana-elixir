@@ -6,6 +6,8 @@ defmodule Solana.ShortVec do
   the length of arrays in a compact binary format.
   """
 
+  import Bitwise
+
   @doc """
   Encode a length value using short vector encoding.
 

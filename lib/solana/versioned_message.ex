@@ -116,7 +116,7 @@ defmodule Solana.VersionedMessage do
     |> Enum.map(fn account -> account.key end)
   end
 
-  defp count_signers(instructions, all_accounts) do
+  defp count_signers(instructions, _all_accounts) do
     # Count unique accounts that need to sign
     signing_accounts = instructions
                       |> Enum.flat_map(fn instruction ->
